@@ -5,21 +5,101 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Dhiman & Dhiman Advocates - Experienced Advocates in Panipat</title>
   <meta name="description" content="Dhiman & Dhiman Advocates — 20+ years experience in Civil, Family, Property, Labour & Arbitration. Chamber No. 336, Judicial Complex, Panipat." />
-  <link rel="stylesheet" href="styles.css" />
   <meta property="og:title" content="Dhiman & Dhiman Advocates" />
   <meta property="og:description" content="Experienced legal representation — Civil, Family, Property, Labour & Arbitration. Contact +91 92531 33304" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b3a66" />
+
+  <!-- Favicon (SVG data URL) -->
+  <link rel="icon" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="%230b3a66"/><text x="50" y="58" font-size="50" text-anchor="middle" fill="white" font-family="Arial,Helvetica,sans-serif">DD</text></svg>'>
+
+  <style>
+    /* Minimal inline styles so page looks decent after paste (you can keep your styles.css) */
+    :root{--brand:#0b3a66;--accent:#0b3a66;--muted:#666;}
+    body{font-family:Inter,system-ui,Segoe UI,Arial,Helvetica,sans-serif;margin:0;color:#111;line-height:1.45}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    header.site-header{background:#fff;border-bottom:1px solid #eee}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo-svg{width:70px;height:70px;flex:0 0 70px;border-radius:8px;background:var(--brand);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    .brand h1{margin:0;font-size:18px}
+    .sub{color:var(--muted);font-size:13px}
+    .main-nav{display:flex;gap:12px;align-items:center}
+    .main-nav a{color:var(--brand);text-decoration:none;font-weight:600}
+    .hero{background:#f7fbff;padding:28px 0}
+    .hero-grid{display:flex;gap:20px;align-items:start;flex-wrap:wrap}
+    .hero-left{flex:1;min-width:260px}
+    .hero-right{width:320px}
+    .lead{font-size:1.05rem;color:#222}
+    .btn{display:inline-block;padding:10px 14px;background:var(--brand);color:#fff;border-radius:6px;text-decoration:none}
+    .btn.ghost{background:transparent;color:var(--brand);border:1px solid var(--brand)}
+    .small-meta{list-style:none;padding:0;margin:12px 0;color:var(--muted)}
+    .wrap.section{padding:22px 18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card{padding:12px;border:1px solid #eee;border-radius:8px;background:#fff}
+    .team-card{display:flex;gap:12px;align-items:center}
+    .avatar{width:54px;height:54px;border-radius:8px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+    footer.site-footer{background:#f6f8fb;padding:16px 0;border-top:1px solid #eee}
+    .contact-grid{display:flex;gap:20px;flex-wrap:wrap}
+    .contact-grid > div{flex:1;min-width:260px}
+    .fab{position:fixed;right:18px;bottom:18px;background:var(--brand);color:#fff;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 6px 18px rgba(11,58,102,0.2)}
+    @media(max-width:800px){ .hero-grid{flex-direction:column} .hero-right{width:100%} .main-nav{display:none} }
+  </style>
+
+  <!-- JSON-LD LocalBusiness (LegalService) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Dhiman & Dhiman Advocates",
+    "url": "https://dhimanadvocates.kcd336.workers.dev",
+    "telephone": "+919253133304",
+    "email": "kcd336@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Chamber No. 336, Third Floor, Advocate Chamber Complex, Judicial Complex",
+      "addressLocality": "Panipat",
+      "addressRegion": "Haryana",
+      "postalCode": "",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Fr 09:30-18:00",
+    "image": "",
+    "priceRange": "₹₹"
+  }
+  </script>
+
+  <!-- Optional analytics (uncomment and paste your analytics ID if you have one) -->
+  <!-- Google Analytics example (paste your GA ID if you want): -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXX');
+  </script> -->
+
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap">
-      <div class="brand">
-        <div class="logo">DD</div>
-        <div>
-          <h1>Dhiman &amp; Dhiman Advocates</h1>
-          <div class="sub">Adv. Karamchand Dhiman &amp; Adv. Dhan Maheshwari Dhiman</div>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:16px;">
+      <div class="brand" style="align-items:center">
+        <!-- Inline SVG logo: DD icon + text -->
+        <div style="display:flex;gap:12px;align-items:center">
+          <div class="logo-svg" aria-hidden="true" title="Dhiman & Dhiman Advocates">
+            <!-- small DD -->
+            <svg width="36" height="36" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DD logo">
+              <rect width="100" height="100" rx="12" fill="#0b3a66"/>
+              <text x="50" y="63" font-family="Arial, Helvetica, sans-serif" font-size="56" fill="#fff" font-weight="700" text-anchor="middle">DD</text>
+            </svg>
+          </div>
+          <div>
+            <h1 style="font-size:16px;margin:0">Dhiman &amp; Dhiman Advocates</h1>
+            <div class="sub">Adv. Karamchand Dhiman &amp; Adv. Dhan Maheshwari Dhiman</div>
+          </div>
         </div>
       </div>
-      <nav class="main-nav">
+
+      <nav class="main-nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#team">Team</a>
@@ -44,11 +124,12 @@
             <li>Office: Chamber No. 336, Third Floor, Advocate Chamber Complex, Judicial Complex, Panipat, Haryana</li>
           </ul>
         </div>
+
         <div class="hero-right">
-          <div class="card highlight">20+ Years<br/><span class="muted">Legal Practice</span></div>
-          <div class="card info">
+          <div class="card highlight" style="text-align:center;font-weight:700">20+ Years<br/><span class="muted" style="font-weight:500">Legal Practice</span></div>
+          <div class="card info" style="margin-top:12px">
             <h4>Courts & Forums</h4>
-            <ul>
+            <ul style="margin:0;padding-left:18px;color:var(--muted);">
               <li>Labour Tribunals</li>
               <li>Arbitration Matters</li>
               <li>RERA Matters</li>
@@ -68,70 +149,27 @@
     <section id="services" class="wrap section">
       <h3>Practice Areas</h3>
       <div class="grid">
-        <article class="card">
-          <h4>Family Law</h4>
-          <p>Divorce, custody, maintenance — तलाक, हिरासत, भरण-पोषण</p>
-        </article>
-        <article class="card">
-          <h4>Civil Litigation</h4>
-          <p>Property, contract, injunctions — संपत्ति, अनुबंध, निषेधाज्ञा</p>
-        </article>
-        <article class="card">
-          <h4>Property Registration & Documents</h4>
-          <p>Sale deed, gift deed, mortgage, lease, partition, POA</p>
-        </article>
-        <article class="card">
-          <h4>Drafting & Documentation</h4>
-          <p>Agreements, notices, affidavits</p>
-        </article>
-        <article class="card">
-          <h4>ADR & Mediation</h4>
-          <p>Mediation and settlement</p>
-        </article>
-        <article class="card">
-          <h4>Criminal Matters</h4>
-          <p>Bail, FIR, hearings</p>
-        </article>
-        <article class="card">
-          <h4>Cheque Bounce (138 NI Act)</h4>
-          <p>Negotiable Instruments Act proceedings</p>
-        </article>
-        <article class="card">
-          <h4>Consumer Disputes</h4>
-          <p>Cases in consumer forum</p>
-        </article>
-        <article class="card">
-          <h4>Motor Accident Claims</h4>
-          <p>Compensation claims (MACT)</p>
-        </article>
-        <article class="card">
-          <h4>Arbitration</h4>
-          <p>Commercial & private arbitration</p>
-        </article>
-        <article class="card">
-          <h4>Labour & Employment</h4>
-          <p>Wage disputes, service matters, tribunals</p>
-        </article>
-        <article class="card">
-          <h4>RERA Matters</h4>
-          <p>RERA claims and compliance</p>
-        </article>
+        <article class="card"><h4>Family Law</h4><p>Divorce, custody, maintenance — तलाक, हिरासत, भरण-पोषण</p></article>
+        <article class="card"><h4>Civil Litigation</h4><p>Property, contract, injunctions — संपत्ति, अनुबंध, निषेधाज्ञा</p></article>
+        <article class="card"><h4>Cheque Bounce (138 NI Act)</h4><p>Negotiable Instruments Act proceedings</p></article>
+        <article class="card"><h4>Motor Accident Claims</h4><p>Compensation claims (MACT)</p></article>
+        <article class="card"><h4>Arbitration</h4><p>Commercial & private arbitration</p></article>
       </div>
     </section>
 
     <section id="team" class="wrap section">
       <h3>Our Team</h3>
-      <div class="grid-2">
-        <div class="team-card">
-          <div class="avatar">K</div>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
+        <div class="card team-card">
+          <div class="avatar" aria-hidden="true">K</div>
           <div>
             <div class="name">Adv. Karamchand Dhiman</div>
             <div class="meta">Bar No: P/391/2004</div>
             <div class="desc">Civil Litigation, Property, Drafting</div>
           </div>
         </div>
-        <div class="team-card">
-          <div class="avatar">D</div>
+        <div class="card team-card">
+          <div class="avatar" aria-hidden="true">D</div>
           <div>
             <div class="name">Adv. Dhan Maheshwari Dhiman</div>
             <div class="meta">Bar No: P/1976/2012</div>
@@ -141,9 +179,11 @@
       </div>
     </section>
 
+    <!-- Contact & Payments -->
     <section id="contact" class="wrap section contact">
       <h3>Contact & Appointments</h3>
-      <p>Call or email to request an appointment. For urgent matters call the number below.</p>
+      <p>Call or email to request an appointment. For urgent matters call the number below. For payments, please follow the instructions below and send the payment screenshot on WhatsApp after transfer for confirmation and receipt.</p>
+
       <div class="contact-grid">
         <div>
           <p><strong>Phone:</strong> <a href="tel:+919253133304">+91 92531 33304</a></p>
@@ -151,45 +191,77 @@
           <p><strong>Office:</strong> Chamber No. 336, Third Floor, Advocate Chamber Complex, Judicial Complex, Panipat, Haryana</p>
           <p><strong>Bar Nos:</strong> P/391/2004; P/1976/2012</p>
           <p><strong>Languages:</strong> English, Hindi (Punjabi — spoken)</p>
-          <p><strong>Punjabi Note:</strong> I can understand Punjabi but cannot read or write it.</p>
-          <p style="margin-top:12px;">
-            <a class="btn whatsapp" href="https://wa.me/919253133304" target="_blank" rel="noopener">Chat on WhatsApp</a>
-          </p>
+          <p style="margin-top:12px;"><a class="btn whatsapp" href="https://wa.me/919253133304" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
         </div>
+
         <div>
-          <!-- REPLACED CONTACT FORM: Formspree AJAX -->
+          <!-- Formspree AJAX form -->
           <form id="my-form" action="https://formspree.io/f/xnnlgjzz" method="POST" class="contact-form">
-            <label>Your name</label>
-            <input type="text" name="name" required />
-
-            <label>Phone</label>
-            <input type="text" name="phone" required />
-
-            <label>Email</label>
-            <input type="email" name="email" />
-
-            <label>Subject</label>
-            <input type="text" name="subject" />
-
-            <label>Message</label>
-            <textarea name="message" rows="6" required></textarea>
-
+            <label>Your name</label><input type="text" name="name" required />
+            <label>Phone</label><input type="tel" name="phone" required />
+            <label>Email</label><input type="email" name="email" />
+            <label>Subject</label><input type="text" name="subject" />
+            <label>Message</label><textarea name="message" rows="6" required></textarea>
             <button id="my-form-button" type="submit" class="btn">Send</button>
             <p id="my-form-status" style="margin-top:10px;display:none;"></p>
           </form>
+
+          <!-- Payment / QR + Masked Bank Details -->
+          <div class="payments" aria-live="polite" style="margin-top:18px;border-top:1px solid #eee;padding-top:12px;">
+            <h4>Fees Payment (Bank / UPI)</h4>
+            <p style="margin-bottom:8px;">
+              कृपया भुगतान करने के बाद WhatsApp पर <a href="https://wa.me/919253133304" target="_blank" rel="noopener">+91 92531 33304</a> पर भुगतान की स्लिप (screenshot) भेजें — नाम और भुगतान का उद्देश्य ज़रूर लिखें (उदाहरण: "Consultation Fee - राम कुमार").
+            </p>
+
+            <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
+              <div style="min-width:200px;">
+                <img
+                  src="https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=upi%3A%2F%2Fpay%3Fpa%3Dkaramchandadvocate%40ybl%26pn%3DKaramchand%2520Dhiman%26tn%3DFees%2520Payment"
+                  alt="UPI QR code - karamchandadvocate@ybl"
+                  width="200" height="200"
+                  style="border:1px solid #ddd;padding:8px;background:#fff;display:block;"
+                  loading="lazy"
+                />
+                <p style="font-size:0.95em;margin-top:8px;">Scan to pay: <strong>karamchandadvocate@ybl</strong></p>
+                <p style="margin-top:6px;"><a class="btn" href="upi://pay?pa=karamchandadvocate@ybl&pn=Karamchand%20Dhiman&tn=Fees%20Payment" rel="noopener">Pay via UPI (phone)</a></p>
+              </div>
+
+              <div style="flex:1;min-width:260px;">
+                <div id="masked-bank" style="padding:8px;border:1px solid #eee;background:#fafafa;">
+                  <p style="margin:6px 0;"><strong>Account name:</strong> Karamchand Dhiman</p>
+                  <p style="margin:6px 0;"><strong>Bank:</strong> State Bank of India</p>
+                  <p style="margin:6px 0;"><strong>A/C No:</strong> XXXX XXXXX <strong>4913</strong></p>
+                  <p style="margin:6px 0;"><strong>IFSC:</strong> <em>Shown on reveal</em></p>
+                  <p style="margin:6px 0;"><strong>Branch:</strong> Sanjay Chowk, Panipat</p>
+                  <p style="margin:10px 0 0;font-size:0.9em;color:#666;">(Full details hidden for security. Click the button to reveal full bank details — please confirm you will send payment screenshot after transfer.)</p>
+                </div>
+
+                <div style="margin-top:10px;">
+                  <button id="revealBankBtn" class="btn">Show full bank details</button>
+                  <span id="revealMsg" style="margin-left:10px;color:#666;font-size:0.95em;display:none;">Full details revealed. Please send payment screenshot to WhatsApp after transfer.</span>
+                </div>
+
+                <div id="full-bank" style="display:none;margin-top:12px;padding:10px;border:1px solid #ddd;background:#fff;">
+                  <p style="margin:6px 0;"><strong>Account name:</strong> Karamchand Dhiman</p>
+                  <p style="margin:6px 0;"><strong>Bank:</strong> State Bank of India</p>
+                  <p style="margin:6px 0;"><strong>A/C No:</strong> 39041024913</p>
+                  <p style="margin:6px 0;"><strong>IFSC:</strong> SBI0030512</p>
+                  <p style="margin:6px 0;"><strong>Branch:</strong> Sanjay Chowk, Panipat</p>
+                  <p style="margin:6px 0;"><strong>UPI ID:</strong> karamchandadvocate@ybl</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End payments -->
         </div>
       </div>
     </section>
   </main>
 
-  <footer class=<footer>
-  <p id="footer-year">© <span id="year"></span> Dhiman & Dhiman Advocates. All rights reserved.</p>
-</footer>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
-      <div>20+ years’ practice • Bar Nos: P/391/2004; P/1976/2012 • +91 92531 33304</div>
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <p id="footer-year" style="margin:0;">© <span id="year"></span> Dhiman &amp; Dhiman Advocates. All rights reserved.</p>
+      <div class="footer-info" style="color:var(--muted)">20+ years’ practice • Bar Nos: P/391/2004; P/1976/2012 • <a href="tel:+919253133304">+91 92531 33304</a></div>
     </div>
   </footer>
 
@@ -204,7 +276,6 @@
     var form = document.getElementById('my-form');
     var status = document.getElementById('my-form-status');
     var btn = document.getElementById('my-form-button');
-
     if(!form) return;
 
     form.addEventListener('submit', function(e){
@@ -252,8 +323,29 @@
     });
   })();
 
-  // replace YEAR placeholder
-  document.querySelectorAll('footer .wrap div')[0].textContent = '© ' + new Date().getFullYear() + ' Dhiman & Dhiman Advocates. All rights reserved.';
+  // Footer year filler
+  (function(){
+    var y = document.getElementById('year');
+    if(y) y.textContent = new Date().getFullYear();
+  })();
+
+  // Reveal bank details button
+  (function(){
+    var btn = document.getElementById('revealBankBtn');
+    var full = document.getElementById('full-bank');
+    var masked = document.getElementById('masked-bank');
+    var msg = document.getElementById('revealMsg');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var ok = confirm('Aap full bank details dekhna chahte hain? Kripya ensure karein ki aap payment karne ke baad WhatsApp par screenshot bhejenge.');
+      if(!ok) return;
+      masked.style.display = 'none';
+      full.style.display = 'block';
+      btn.style.display = 'none';
+      msg.style.display = 'inline';
+      try { localStorage.setItem('bankReveal_at', new Date().toISOString()); } catch(e){}
+    });
+  })();
 </script>
 
 </body>
