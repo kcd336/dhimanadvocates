@@ -157,16 +157,25 @@
           </p>
         </div>
         <div>
-          <form id="contact-form">
+          <!-- REPLACED CONTACT FORM: Formspree AJAX -->
+          <form id="my-form" action="https://formspree.io/f/xnnlgjzz" method="POST" class="contact-form">
             <label>Your name</label>
-            <input name="name" required />
+            <input type="text" name="name" required />
+
             <label>Phone</label>
-            <input name="phone" required />
+            <input type="text" name="phone" required />
+
+            <label>Email</label>
+            <input type="email" name="email" />
+
             <label>Subject</label>
-            <input name="subject" />
+            <input type="text" name="subject" />
+
             <label>Message</label>
             <textarea name="message" rows="6" required></textarea>
-            <button type="submit" class="btn">Send</button>
+
+            <button id="my-form-button" type="submit" class="btn">Send</button>
+            <p id="my-form-status" style="margin-top:10px;display:none;"></p>
           </form>
         </div>
       </div>
@@ -186,19 +195,61 @@
   </a>
 
 <script>
-// simple form behaviour: open mailto with form content
-document.getElementById('contact-form').addEventListener('submit', function(e){
-  e.preventDefault();
-  var f = e.target;
-  var name = encodeURIComponent(f.name.value || '');
-  var phone = encodeURIComponent(f.phone.value || '');
-  var subject = encodeURIComponent(f.subject.value || 'Website contact');
-  var message = encodeURIComponent(f.message.value || '');
-  var body = 'Name: ' + name + '%0A' + 'Phone: ' + phone + '%0A' + 'Message: ' + message;
-  window.location.href = 'mailto:kcd336@gmail.com?subject=' + subject + '&body=' + body;
-});
-// replace YEAR placeholder
-document.querySelectorAll('footer .wrap div')[0].textContent = '© ' + new Date().getFullYear() + ' Dhiman & Dhiman Advocates. All rights reserved.';
+  // ===== Formspree AJAX submission =====
+  (function(){
+    var form = document.getElementById('my-form');
+    var status = document.getElementById('my-form-status');
+    var btn = document.getElementById('my-form-button');
+
+    if(!form) return;
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      status.style.display = 'none';
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      var data = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function(response){
+        btn.disabled = false;
+        btn.textContent = 'Send';
+        if(response.ok){
+          status.style.display = 'block';
+          status.style.color = 'green';
+          status.textContent = 'Thank you! Your message has been sent.';
+          form.reset();
+        } else {
+          response.json().then(function(json){
+            status.style.display = 'block';
+            status.style.color = 'red';
+            if(json && json.errors){
+              status.textContent = json.errors.map(function(e){ return e.message; }).join(', ');
+            } else {
+              status.textContent = 'There was a problem submitting the form.';
+            }
+          }).catch(function(){
+            status.style.display = 'block';
+            status.style.color = 'red';
+            status.textContent = 'There was a problem submitting the form.';
+          });
+        }
+      }).catch(function(){
+        btn.disabled = false;
+        btn.textContent = 'Send';
+        status.style.display = 'block';
+        status.style.color = 'red';
+        status.textContent = 'Network error — please try again later.';
+      });
+    });
+  })();
+
+  // replace YEAR placeholder
+  document.querySelectorAll('footer .wrap div')[0].textContent = '© ' + new Date().getFullYear() + ' Dhiman & Dhiman Advocates. All rights reserved.';
 </script>
 
 </body>
