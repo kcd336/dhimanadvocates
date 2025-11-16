@@ -182,9 +182,13 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <div>© {YEAR} Dhiman &amp; Dhiman Advocates. All rights reserved.</div>
+  <footer class=<footer>
+  <p id="footer-year">© <span id="year"></span> Dhiman & Dhiman Advocates. All rights reserved.</p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
       <div>20+ years’ practice • Bar Nos: P/391/2004; P/1976/2012 • +91 92531 33304</div>
     </div>
   </footer>
