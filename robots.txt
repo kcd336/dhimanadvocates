@@ -1,3 +1,2 @@
 User-agent: *
 Allow: /
-Sitemap: https://dhimanadvocates.kcd336.workers.dev/sitemap.xml
