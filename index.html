@@ -146,49 +146,73 @@ button[type="submit"]{background:var(--accent);color:#fff;border:none;padding:10
   <h2>Payment / Consultation Fees</h2>
 
   <table style="width:100%;border-collapse:collapse;margin-bottom:12px;">
-    <tr><td style="padding:8px;border:1px solid #eee;font-weight:600">Consultation (30 min)</td><td style="padding:8px;border:1px solid #eee">₹ 500</td></tr>
-    <tr><td style="padding:8px;border:1px solid #eee;font-weight:600">Retainer / Filing Start</td><td style="padding:8px;border:1px solid #eee">₹ 5,000 (approx)</td></tr>
+    <tr>
+      <td style="padding:8px;border:1px solid #eee;font-weight:600">Consultation (30 min)</td>
+      <td style="padding:8px;border:1px solid #eee">₹ 500</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;border:1px solid #eee;font-weight:600">Retainer / Filing Start</td>
+      <td style="padding:8px;border:1px solid #eee">₹ 5,000 (approx)</td>
+    </tr>
   </table>
 
   <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
+    
+    <!-- QR IMAGE -->
     <div>
-      <img src="upi-qr.png" alt="UPI QR" style="width:160px;height:160px;border:1px solid #eee;padding:8px;background:#fff"/>
-      <p class="small">Scan QR with UPI app</p>
+      <img src="upi-qr.png" alt="UPI QR — Dhiman & Dhiman" 
+           style="width:160px;height:160px;border:1px solid #eee;padding:8px;background:#fff"/>
+      <p class="small">Scan QR with any UPI app</p>
     </div>
 
+    <!-- UPI ID & PAY BUTTON -->
     <div style="flex:1">
-      <p><strong>UPI ID:</strong> karamchandadvocate@ybl</p>
 
+      <!-- UPI ID (VISIBLE + CLEAN) -->
       <p>
-        <a href="upi://pay?pa=YOUR_UPI_ID&pn=Dhiman%20Advocates&am=500&cu=INR"
-           style="padding:10px 12px;border:1px solid #0a2540;border-radius:8px;text-decoration:none;color:#0a2540">
-           Pay ₹500 (UPI)
+        <strong>UPI ID:</strong> 
+        <span id="upi-id-display" style="font-weight:700;">
+          karamchandadvocate@ybl
+        </span>
+      </p>
+
+      <!-- CLICKABLE UPI LINK -->
+      <p>
+        <a href="upi://pay?pa=karamchandadvocate@ybl&pn=Dhiman%20Advocates&am=500&cu=INR"
+           style="padding:10px 14px;border-radius:8px;border:1px solid #0a2540;
+                  text-decoration:none;color:#0a2540;display:inline-block;">
+          💳 Pay ₹500 (UPI)
         </a>
       </p>
 
+      <!-- WHATSAPP CONFIRM LINK -->
       <p>
-        <a href="https://wa.me/919253133304?text=Payment%20Sent%20-%20Txn%20ID:"
-           style="text-decoration:none;color:#0a2540">
-          ✔ WhatsApp payment screenshot: +91 92531 33304
+        <a href="https://wa.me/919253133304?text=Payment%20sent%20for%20consultation%20-%20Txn%20ID:"
+           style="text-decoration:none;color:#0a2540;">
+          ✔ Send payment screenshot on WhatsApp: +91 92531 33304
         </a>
       </p>
+
     </div>
   </div>
 
-  <details style="margin-top:10px">
-    <summary>Bank Transfer Details</summary>
-    <div>
+  <!-- BANK DETAILS -->
+  <details style="margin-top:12px;">
+    <summary style="cursor:pointer;">Bank Transfer Details</summary>
+    <div style="margin-top:8px;">
       <p class="small"><strong>Account Name:</strong> Dhiman & Dhiman Advocates</p>
       <p class="small"><strong>Account No:</strong> 1234567890</p>
       <p class="small"><strong>IFSC:</strong> HDFC0000123</p>
+      <p class="small"><strong>Bank:</strong> HDFC Bank</p>
     </div>
   </details>
 
-  <h3 style="margin-top:12px">Payment Confirmation Process</h3>
-  <ol>
-    <li>UPI/Bank से payment करें</li>
-    <li>Screenshot WhatsApp करें</li>
-    <li>हम verify कर के appointment confirm कर देंगे</li>
+  <!-- PAYMENT WORKFLOW -->
+  <h3 style="margin-top:14px;">Payment Confirmation Process</h3>
+  <ol style="margin-left:20px;">
+    <li>UPI या Bank से payment करें</li>
+    <li>WhatsApp पर screenshot भेजें: +91 92531 33304</li>
+    <li>हम verify करके आपका appointment confirm कर देंगे</li>
   </ol>
 </section>
 
