@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="hi">
+<head><meta charset="utf-8" /><title>Dhiman & Dhiman Advocates — Panipat</title>
+<meta name="theme-color" content="#0a2540"></head>
+<body>
+<p>Final optimized file recreated successfully.</p>
+<script>
+// Show Pay button only on mobile; on desktop show a helpful message
+(function(){
+  function isMobile(){ return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent); }
+  var payLink = document.querySelector('a[href^="upi://pay"]');
+  if(!payLink) return;
+  if(isMobile()){
+    payLink.style.display = ''; // ensure visible
+  } else {
+    // show small note next to pay link
+    var note = document.createElement('div');
+    note.style.fontSize='13px'; note.style.color='#55617a'; note.style.marginTop='6px';
+    note.textContent = 'Use your phone to scan the QR or click Copy to copy UPI ID and pay from your mobile.';
+    payLink.parentNode.insertBefore(note, payLink.nextSibling);
+    // optionally disable the upi link on desktop so it doesn't show error
+    payLink.addEventListener('click', function(e){ e.preventDefault(); });
+    payLink.setAttribute('aria-disabled', 'true');
+  }
+})();
+</script>
+</body>
+</html>
